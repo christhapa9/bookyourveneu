@@ -16,21 +16,20 @@
         android:id="@+id/appbar_id">
 
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="350dp"
+            android:layout_height="159dp"
             android:src="@drawable/splash" />
     </android.support.design.widget.AppBarLayout>
 
     <android.support.design.widget.TabLayout
+        android:id="@+id/tablayout_id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:tabGravity="fill"
-        app:tabMode="fixed"
-        android:id="@+id/tablayout_id"
-        app:tabTextColor="#fff"
-        app:tabIndicatorColor="@android:color/holo_red_dark"
         android:background="@color/colorPrimary"
-        />
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@android:color/holo_red_dark"
+        app:tabMode="fixed"
+        app:tabTextColor="#fff" />
 
     <android.support.v4.view.ViewPager
         android:layout_width="match_parent"
