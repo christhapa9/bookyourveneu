@@ -1,7 +1,5 @@
 package com.example.bookyourvenue;
 
-
-import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -10,7 +8,6 @@ import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
     private TabLayout tabLayout;
-    private AppBarLayout appBarLayout;
     private ViewPager viewPager;
 
     @Override
@@ -19,7 +16,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         tabLayout = (TabLayout) findViewById(R.id.tablayout_id);
-        appBarLayout = (AppBarLayout) findViewById(R.id.appbar_id);
         viewPager = (ViewPager) findViewById(R.id.viewPager_id);
 
         PageAdapter adapter=new PageAdapter(getSupportFragmentManager());
