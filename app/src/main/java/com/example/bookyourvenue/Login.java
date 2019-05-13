@@ -31,14 +31,15 @@ public class Login extends Fragment implements  View.OnClickListener {
         btnLogin.setOnClickListener(this);
         return view;
     }
-    private void checkUser() {
+    private void User() {
         SharedPreferences sharedPreferences = this.getActivity().getSharedPreferences("User", MODE_PRIVATE);
         String username = sharedPreferences.getString("username", "");
         String password = sharedPreferences.getString("password", "");
 
         if (username.equals(etUsername.getText().toString()) && password.equals(etPassword.getText().toString())) {
             Toast.makeText(this.getActivity(), "Successfully logged in", Toast.LENGTH_LONG).show();
-            Intent intent = new Intent(this.getActivity(), Dashboard.class);
+
+            Intent intent = new Intent(this.getActivity(), Home.class);
             startActivity(intent);
 
         } else {
@@ -50,7 +51,7 @@ public class Login extends Fragment implements  View.OnClickListener {
 
     @Override
     public void onClick(View v) {
-
+        User();
     }
 }
 
