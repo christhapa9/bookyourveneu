@@ -39,7 +39,7 @@ public class Login extends Fragment implements  View.OnClickListener {
         if (username.equals(etUsername.getText().toString()) && password.equals(etPassword.getText().toString())) {
             Toast.makeText(this.getActivity(), "Successfully logged in", Toast.LENGTH_LONG).show();
 
-            Intent intent = new Intent(this.getActivity(), Home.class);
+            Intent intent = new Intent(this.getActivity(), Home1.class);
             startActivity(intent);
 
         } else {
